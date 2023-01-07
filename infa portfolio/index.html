@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Personal Portfolio - INFA</title>
+        <link rel="icon" type="images/x-icon" href="/images/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/whitelogo.png" width="200px" height="120px" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Infant</span><br> Sabartina from Tirunelveli</h1>
+                </div>
+            </div>
+        </div>
+        <!----------------------about------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/secnddp.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
+                            I am a mature team worker and adaptable to all challenging situations. I am able to work 
+                            well both in a team environment as well as using own initiative. I am able to work well 
+                            under pressure and adhere to strict deadlines.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front End - React</span><br>React fundamentals(JSX, Virtual DOM, Node.js)</li>
+                                <li><span>Back End - Java</span><br>Performed testing,configuration and troubleshooting of various software programs</li>
+                                <li><span>FrameWork - Spring Boot</span><br>Handle development tasks using the Java Spring framework and Integration</li>
+                                <li><span>Database - MySql</span><br>Fine-tuned database with respect to specific behaviors</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2020 Oct - 2023 Jan</span><br>Software Developer at Chaosology</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017-2019</span><br>MCA From Francis Xavier Engineering College</li>
+                                <li><span>2014-2017</span><br>Bsc (Computer Science) From Francis Xavier Engineering College</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------Services----------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Expertise</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-desktop"></i>
+                        <h2>Software Development</h2>
+                        <p>Experienced in oop:Java using springboot framework, NodeJs,javascript</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-react"></i>
+                        <h2>FrontEnd Dev React</h2>
+                        <p>Passionate about UI/UX.over 2 years of development experience in HTML, css,
+                            JS, React Js using Vs code</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>MySql</h2>
+                        <p>Decent experience with recent versions of MySQL Workbench</p>
+                        <!-- <a href="#">learn more</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------portfolio---------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/njsepticWeb.png">
+                        <div class="layer">
+                            <h3>Web Application</h3>
+                            <br>
+                            <p>This website is helps to managing the data and scheduling the services of NJSMG.</p>
+                            <!-- <a href="https://app.njseptic.com/"><i class="fas fa-external-link-alt"></i></a> -->
+                        </div>
+                        
+                    </div>
+                    <div class="work">
+                        <img src="images/poolGame.png">
+                        <div class="layer">
+                            <h3>Game Development</h3>
+                            <br>
+                            <p>Table brains is the advanced level of pool game.</p>
+                            <a href="https://icuesystems.com/home/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </br>
+                <!-- <a href="#" class="btn">See More</a> -->
+            </div>
+        </div>
+        <!-- --------------------------contact--------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><img src="images/mail-icon.png"> teenuuu7337@gmail.com</p>
+                        <p><img src="images/phone-icon.png"> +91-9025649351</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/infateenu" target="_blank"><img src="images/facebook.png"></a>
+                             <a href="https://www.instagram.com/c_born_2_liv_happiee/?next=%2F"target="_blank"><img src="images/instagram.png"> 
+                                <!-- <i class="fab fa-instagram"></i> -->
+                            </a>
+                            <a href="https://www.linkedin.com/in/%C3%ADnfa-teenu-ba54a7184/" target="_blank"><img src="images/linkdin.png"></a>
+                        </div>
+                        <a href="images/infantExp.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Infa Teenu. Made with <img src="images/heart.png"></p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw_TDqxBsccRVV1Gb0hC3ij9U9AD3zJ1lZ233WnaMi-6vsiGmyuXPvGf7DXEUfZ3cBr/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
